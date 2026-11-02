@@ -1,0 +1,22 @@
+<!-- colors.xml -->
+<resources>
+    <color name="primary">#1976D2</color>
+    <color name="primary_dark">#1565C0</color>
+    <color name="background">#F5F7FA</color>
+    <color name="card_blue">#E3F2FD</color>
+    <color name="card_purple">#F3E5F5</color>
+    <color name="card_green">#E8F5E9</color>
+    <color name="card_orange">#FFF3E0</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+</resources>
+
+<!-- themes.xml -->
+<resources>
+    <style name="Theme.KawtherSchool" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+</resources>

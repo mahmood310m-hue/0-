@@ -1,0 +1,46 @@
+<!-- activity_login.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="8dp"
+            android:layout_marginTop="40dp">
+            <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/ic_school" android:padding="20dp" app:tint="@color/primary" android:background="@color/card_blue"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="مدرسة كوثر الأهلية" android:textSize="22sp" android:textStyle="bold" android:textColor="@color/primary" android:layout_marginTop="20dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="تسجيل دخول الطلاب" android:textSize="15sp" android:textColor="@color/text_secondary" android:layout_marginTop="4dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="اسم المستخدم" android:layout_marginTop="32dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" app:boxStrokeColor="@color/primary">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etUsername" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="كلمة المرور" android:layout_marginTop="16dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" app:boxStrokeColor="@color/primary" app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etPassword" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="56dp" android:text="تسجيل الدخول"
+            android:layout_marginTop="24dp" app:cornerRadius="12dp" android:backgroundTint="@color/primary"/>
+
+        <TextView android:id="@+id/tvGuest" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="الدخول كضيف" android:textColor="@color/primary" android:textStyle="bold" android:layout_marginTop="16dp" android:padding="8dp"/>
+    </LinearLayout>
+</ScrollView>
